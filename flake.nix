@@ -23,6 +23,7 @@
         with pkgs;
         {
           devShells.default = mkShell {
+            name = "rust-dev";
             buildInputs = with pkgs; [rustc cargo];
           };
         }
